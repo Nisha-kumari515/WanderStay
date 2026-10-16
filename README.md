@@ -151,39 +151,66 @@ node app.js
 
 Open the local URL printed in your terminal.
 
-📂 Project Structure
+## 📂 Project Structure
+
+```text
 WanderStay/
 ├── classroom/
+│   ├── routes/
+│   │   ├── post.js
+│   │   └── user.js
+│   ├── views/
+│   │   └── page.ejs
+│   └── server.js
 ├── controllers/
 │   ├── listings.js
 │   ├── reviews.js
 │   └── users.js
 ├── init/
+│   ├── data.js
+│   └── index.js
 ├── models/
 │   ├── listing.js
 │   ├── review.js
 │   └── user.js
 ├── public/
 │   ├── css/
+│   │   ├── rating.css
+│   │   └── style.css
 │   └── js/
+│       ├── map.js
+│       └── script.js
 ├── routes/
 │   ├── listing.js
 │   ├── review.js
 │   └── user.js
 ├── utils/
+│   ├── ExpressError.js
+│   └── wrapAsync.js
 ├── views/
 │   ├── includes/
+│   │   ├── flash.ejs
+│   │   ├── footer.ejs
+│   │   └── navbar.ejs
 │   ├── layouts/
+│   │   └── boilerplate.ejs
 │   ├── listing/
-│   └── users/
+│   │   ├── edit.ejs
+│   │   ├── index.ejs
+│   │   ├── new.ejs
+│   │   └── show.ejs
+│   ├── users/
+│   │   ├── login.ejs
+│   │   └── signup.ejs
+│   └── error.ejs
 ├── .gitignore
 ├── app.js
 ├── cloudConfig.js
 ├── middleware.js
 ├── package.json
+├── package-lock.json
 └── schema.js
-
----
+```
 
 ## 👩‍💻 Author
 
